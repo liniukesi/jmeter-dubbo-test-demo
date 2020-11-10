@@ -8,7 +8,7 @@
        http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
     <dubbo:application name="demo-jmeter-dubbo-test-service" />
-    <!--<dubbo:registry address="localhost:2181" protocol="zookeeper" />-->
+    <dubbo:registry address="localhost:2181" protocol="zookeeper" />
 
     <!---->
     <!--consumer-->
