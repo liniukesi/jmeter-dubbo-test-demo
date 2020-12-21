@@ -13,7 +13,7 @@ import javax.annotation.Resource;
  */
 public class DemoServiceTest extends AbstractJavaSamplerClient {
 
-    @Resource
+    //@Resource
     private DemoService demoService;
 
     /**
