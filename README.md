@@ -3,9 +3,9 @@
 
 ### 步骤
 ```
-1.建立类继承AbstractJavaSamplerClient类，重写runTest方法。
-2.打包，并将jar包放[jmeter]/lib/ext目录下。
-3.建立jmeter测试计划。
+1.建立类继承AbstractJavaSamplerClient类，重写runTest方法。(Create a new class which extens from AbstractJavaSamplerClient, then overrite runTest method.)
+2.打包，并将jar包放[jmeter]/lib/ext目录下。(Run packet and put the jar under directory of %jemter%/lib/ext.)
+3.建立jmeter测试计划。(Set up a test plan and run it.)
 ```
 ### 测试方法
 #### GUI
@@ -23,3 +23,4 @@
     -t 测试文件名称
     -l log日志文件名称
 ```
+
