@@ -25,8 +25,10 @@ public class DemoServiceTest extends AbstractJavaSamplerClient {
         super.setupTest(javaSamplerContext);
         System.err.println("test started.");
         DemoServiceInitializer initializer = DemoServiceInitializer.getInstance();
-        initializer.init();
-        demoService = (DemoService) initializer.getBean("demoService");
+        if (null != initializer) {
+            initializer.init();
+            demoService = initializer.getBean("demoService", DemoService.class);    
+        }
     }
 
     /**
