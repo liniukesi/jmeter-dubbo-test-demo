@@ -30,8 +30,8 @@ public class DemoServiceInitializer {
         }
     }
 
-    public Object getBean(String beanName) {
-        return context.getBean(beanName);
+    public <T> T getBean(String beanName, Class<T> t) {
+        return context.getBean(beanName, t);
     }
 
 }
